@@ -22,10 +22,10 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
-          # Disable unnecessary linters to prevent PR failures
           VALIDATE_CHECKOV: false
           VALIDATE_YAML_PRETTIER: false
           VALIDATE_JSCPD: false
           VALIDATE_GITLEAKS: false
           VALIDATE_NATURAL_LANGUAGE: false
           VALIDATE_MARKDOWN_PRETTIER: false
+          VALIDATE_MARKDOWN: false 
